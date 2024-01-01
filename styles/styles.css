@@ -1,0 +1,271 @@
+body{
+    padding: 0%;
+
+    overflow-x: hidden;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.rotated{
+    width: 100%;
+    /* rotate: -38deg; */
+    position: absolute;
+    right: 45%;  
+    
+}
+.upper-part{
+    width: 100%;
+
+}
+.image1{
+    rotate: -38deg;
+    width: 108vw;
+    height: 145vh;
+    
+    border-radius: 3%;
+    
+} 
+.mobile{
+    height: 110%;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    padding: 0%;
+    margin: 0%;
+}
+.titleh1{
+    margin: 0px;
+}
+.title{
+    
+    font-family: 'Ubuntu', sans-serif;
+    
+    font-size: 2rem;   
+    color: white;
+    
+}
+.sentence{
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 450;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    gap:20px ;
+    
+}
+.learn{
+    font-family: 'Ubuntu', sans-serif;
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.2em;
+    background-color: transparent;
+    font-weight: 450;
+    border-color: white;
+    border-radius: 7em;
+    color: white;
+    
+    
+}
+.learn:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+    position: absolute;
+    top: 115%;
+    
+}
+.box{
+    height: 58vh;
+    width: 22%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding-left: 10%;
+    
+
+}
+.text{
+    height: 40%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    padding-left: 8%;
+    
+    font-size: 1.2rem;
+
+}
+.head1{
+    color: #3a0e63;
+}
+.head2{
+    color: #c04a87;
+}
+.head3{
+    color: #7145e0;
+}
+footer{
+    background-color: #333333;
+    height: 17%;
+    position: absolute;
+    top: 195%;
+    width: 100%;
+    left: 0.01px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footerText{
+color: white;
+font-size: 1em;
+font-family: 'Ubuntu', sans-serif;
+}
+.footerText:hover{
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+.arrow{
+    height: 12%;
+    width: 12%;
+    position:relative;
+    top: 1%;
+    left: 13%;
+    rotate: 270deg;
+    
+}
+
+@media(max-width:780px) {
+    body{
+        overflow-x: hidden;
+        display: block;
+        
+    }
+    .rotated{
+        width: 100%;
+        position: absolute;
+        right: 0%;
+        top: -5%;
+        
+    }
+    .image1{
+        rotate: 0deg;
+        width: 100vw;
+        border-radius: 0%;
+        height: 100vh;
+        object-fit:cover ;
+        
+    } 
+    .mobile{
+        height: 50%;
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        top: 75%;
+        
+    }
+    .head{
+        
+        width: 60%;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        gap:20px ;
+        
+    }
+    .title{
+    
+        
+        font-size: 1.5rem; 
+       
+        
+    }
+    .sentence{
+        font-size: 1em;
+        font-weight: lighter;
+    }
+    .features{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .box{
+        height: 35vh;
+        width: 75%; 
+    }
+    .heading{
+        font-size: 1.5em;
+    }
+    .text{   
+        font-size: 1em;
+        padding-right: 8%;
+    }
+    footer{
+        position: absolute;
+        top: 230%;
+        width: 100vw;
+        margin-top: auto;
+        
+        
+        
+        
+    }
+    
+}
+
+@media(min-width:1900px){
+    h1{
+        font-size: 400%;
+    }
+    .head{
+        width: 45%;
+    }
+    .text{
+        font-size: 220%;
+    }
+    .heading{
+        font-size: 350%;
+    }
+    p{
+        font-size: 230%;
+    }
+    .learn{
+        width: 60%;
+        height: 40%;
+    }
+    .mobile{
+        left: 55%;
+    }
+    footer{
+        position: absolute;
+        top:250%;
+    }
+}
